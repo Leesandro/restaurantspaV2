@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <!--NavText-->
+      <a class="navbar-brand" href="./index.html" >
+        <!--<img src="./assets/pictures/bag-heart-fill.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">-->
+        Reservation 4 You
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+<!--MenüButton-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menü
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item disabled" href="#">Reservierungen</a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!--PROFILBUTTON-->
+      </div>
+      <div class="collapse navbar-collapse  position-absolute end-0 " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropstart">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Profil
+            </a>
+            <ul class="dropdown-menu">
+              <li><router-outlet></router-outlet></li>
+              <li><a class="dropdown-item " routerLink="LinkUserlogin">LogIn</a></li>
+              <li><a class="dropdown-item" routerLink="LinkUseradd" >SignIn</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" routerLink="/Restaurant-Sign-In">Restaurant Sign-In</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+
+
+  <!--content-->
+<router-outlet></router-outlet>
+
+
+</body>
+</html>
